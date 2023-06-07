@@ -1,7 +1,7 @@
 # weather-ai
 The course "Weather and Artificial Intelligence" at Dept. Atm, NCU.
 
-Python 3.7.6
+`Python 3.7.6`
 ```console
 pip install --upgrade pip
 pip install matplotlib
