@@ -1,6 +1,7 @@
-# SIMPLE HOLD-OUT VALIDATION
+# %% [markdown]
+# # SIMPLE HOLD-OUT VALIDATION
 
-```python
+# %%
 num_validation_samples = 10000 
 np.random.shuffle(data)
 validation_data = data[:num_validation_samples] 
@@ -13,11 +14,11 @@ validation_score = model.evaluate(validation_data) # At this point you can tune 
 model = get_model() 
 model.train(np.concatenate([training_data, validation_data]))
 test_score = model.evaluate(test_data)
-```
 
-### K-Fold Validation
+# %% [markdown]
+# ### K-Fold Validation
 
-```python
+# %%
 k=4
 num_validation_samples = len(data) // k 
 np.random.shuffle(data) 
@@ -34,6 +35,6 @@ for fold in range(k):
     model = get_model()
     model.train(data)
     test_score = model.evaluate(test_data)
-```
 
-### ITERATED K-FOLD VALIDATION WITH SHUFFLING
+# %% [markdown]
+# ### ITERATED K-FOLD VALIDATION WITH SHUFFLING

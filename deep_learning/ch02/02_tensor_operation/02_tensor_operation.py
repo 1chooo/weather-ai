@@ -170,8 +170,3 @@ x = np.zeros((300, 20))
 x = np.transpose(x)
 
 print(x.shape)
-
-# %%
-
-
-

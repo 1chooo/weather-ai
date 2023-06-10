@@ -201,8 +201,3 @@ model.fit(
 # 
 # - Try using larger or smaller layers: 32 units, 128 units, and so on.
 # - You used two hidden layers. Now try using a single hidden layer, or three hidden layers.
-
-# %% [markdown]
-# 
-
-

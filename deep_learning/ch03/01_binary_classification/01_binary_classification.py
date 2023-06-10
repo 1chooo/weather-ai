@@ -187,8 +187,3 @@ print(results)
 
 # %%
 model.predict(x_test)
-
-# %%
-
-
-

@@ -90,8 +90,3 @@ print('test_acc:', test_acc)
 # %% [markdown]
 # We got the quite a bit lower than the training data set -> *overfitting*.   
 # Machine-learning models tend to perform worse on new data.
-
-# %%
-
-
-

@@ -206,8 +206,3 @@ model.predict(x_test)
 # - Try using layers with more hidden units or fewer hidden units: 32 units, 64 units, and so on.
 # - Try using the mse loss function instead of binary_crossentropy.
 # - Try using the tanh activation (an activation that was popular in the early days of neural networks) instead of relu.
-
-# %% [markdown]
-# 
-
-

@@ -194,8 +194,3 @@ test_mse_score, test_mae_score = model.evaluate(test_data, test_targets)
 # %%
 print(test_mse_score)
 print(test_mae_score)
-
-# %%
-
-
-
