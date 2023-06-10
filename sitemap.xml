@@ -2,27 +2,177 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://1chooo.github.io/weather-ai/</loc>
-         <lastmod>2023-06-08</lastmod>
+         <lastmod>2023-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://1chooo.github.io/weather-ai/contributing/</loc>
-         <lastmod>2023-06-08</lastmod>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/course_materials/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/env_test/</loc>
+         <lastmod>2023-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://1chooo.github.io/weather-ai/reference/</loc>
-         <lastmod>2023-06-08</lastmod>
+         <lastmod>2023-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://1chooo.github.io/weather-ai/usage/</loc>
-         <lastmod>2023-06-08</lastmod>
+         <loc>https://1chooo.github.io/weather-ai/archive/2023_spring/course_materials/</loc>
+         <lastmod>2023-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://1chooo.github.io/weather-ai/example/env_test/</loc>
-         <lastmod>2023-06-08</lastmod>
+         <loc>https://1chooo.github.io/weather-ai/archive/2023_spring/hw01/23_spring_hw01_cifar10_CNN/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/archive/2023_spring/hw01/23_spring_hw01_cifar10_DNN/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/archive/2023_spring/hw01/23_spring_hw01_cifar10_byChatGPT/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/archive/2023_spring/hw01/23_spring_hw01_description/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/archive/2023_spring/hw02/23_spring_hw02_cifar10_data_aug/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/archive/2023_spring/hw02/23_spring_hw02_description/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/archive/2023_spring/intro/23_spring_hw_intro/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/deep_learning/ch02/01_tensors_intro/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/deep_learning/ch02/02_tensor_operation/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/deep_learning/ch02/03_handwriting/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/deep_learning/ch03/01_binary_classification/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/deep_learning/ch03/02_multiclass_classification/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/deep_learning/ch03/03_regression/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/deep_learning/ch04/01_binary_classification_overfitting/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/deep_learning/ch04/02_evaluate/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/deep_learning/ch05/01_mnist/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/machine_learning/ch01/01_evaluation_index/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/machine_learning/ch01/02_regression_model/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/machine_learning/ch01/03_lasso_ridge/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/machine_learning/ch01/04_decision_tree/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/machine_learning/ch01/05_random_forest/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/machine_learning/ch01/06_gradient_boosting_machine/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/machine_learning/ch02/01_data_cleaning/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/machine_learning/ch02/tmp/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/python_basic/01_hello_world/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/python_basic/02_flow_control/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/python_basic/03_numpy/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/python_basic/04_matplotlib/</loc>
+         <lastmod>2023-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://1chooo.github.io/weather-ai/python_basic/05_pandas/</loc>
+         <lastmod>2023-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
