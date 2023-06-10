@@ -10,7 +10,6 @@ pip install scikit-learn
 pip install keras
 pip install tensorflow
 pip install torch
-$ pip install -r requirements.txt       # with the requirements.txt
 
 pip install mkdocs
 pip install mkdocs-material
@@ -18,4 +17,8 @@ pip install pymdown-extensions
 pip install mkdocstrings
 pip install mkdocs-git-revision-date-plugin
 pip install mkdocs-jupyter
+```
+
+```console
+pip install -r requirements.txt       # with the requirements.txt
 ```

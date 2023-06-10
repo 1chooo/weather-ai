@@ -84,7 +84,7 @@ nav:
           - deep_learning/ch03/03_regression.py
         - CH04:
           - deep_learning/ch04/01_binary_classification_overfitting.py
-          - deep_learning/ch04/02_evaluate.md
+          - deep_learning/ch04/02_evaluate.py
         - CH05:
           - deep_learning/ch05/01_mnist.py
     - Archive:
