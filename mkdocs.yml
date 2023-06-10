@@ -34,7 +34,7 @@ plugins:
     - git-revision-date
     - mkdocs-jupyter:
         include_source: True
-        execute: True
+        execute: False
         # ignore: [""]
         # validate_nb: True
         #   ignore_h1_titles: True
