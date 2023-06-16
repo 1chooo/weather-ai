@@ -64,15 +64,17 @@ nav:
       - Python Basic:
         - python_basic/01_hello_world.py
       - Machine Learning:
-        - CH01:
-          - machine_learning/ch01/01_evaluation_index.py
-          - machine_learning/ch01/02_regression_model.py
-          - machine_learning/ch01/03_lasso_ridge.py
-          - machine_learning/ch01/04_decision_tree.py
-          - machine_learning/ch01/05_random_forest.py
-          - machine_learning/ch01/06_gradient_boosting_machine.py
-        - CH02:
-          - machine_learning/ch02/01_data_cleaning.py
+        - Machine Learning Intro:
+          - machine_learning/01_intro/01_evaluation_index.py
+          - machine_learning/01_intro/02_regression_model.py
+          - machine_learning/01_intro/03_lasso_ridge.py
+          - machine_learning/01_intro/04_decision_tree.py
+          - machine_learning/01_intro/05_random_forest.py
+          - machine_learning/01_intro/06_gradient_boosting_machine.py
+        - Data Cleaning and Preprocessing:
+          - machine_learning/02_data_cleaning_preprocessing/01_statistical_indicators.py
+          - machine_learning/02_data_cleaning_preprocessing/02_read_data.py
+          - machine_learning/02_data_cleaning_preprocessing/03_dataframe.py
       - Deep Learning:
         - CH02:
           - deep_learning/ch02/01_tensors_intro.py
