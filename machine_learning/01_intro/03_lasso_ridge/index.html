@@ -12,20 +12,20 @@
         <meta name="author" content="1chooo(Hugo ChunHo Lin)">
       
       
-        <link rel="canonical" href="https://1chooo.github.io/weather-ai/machine_learning/ch01/01_evaluation_index/">
+        <link rel="canonical" href="https://1chooo.github.io/weather-ai/machine_learning/01_intro/03_lasso_ridge/">
       
       
-        <link rel="prev" href="../../../python_basic/01_hello_world/">
+        <link rel="prev" href="../02_regression_model/">
       
       
-        <link rel="next" href="../02_regression_model/">
+        <link rel="next" href="../04_decision_tree/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.16">
     
     
       
-        <title>一、機器學習評估指標選定 - Weather and Artifical Intelligence</title>
+        <title>三、Lasso、Ridge Regression 模型 - Weather and Artifical Intelligence</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#lassoridge-regression" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              一、機器學習評估指標選定
+              三、Lasso、Ridge Regression 模型
             
           </span>
         </div>
@@ -524,14 +524,14 @@
       
       
         <label class="md-nav__link" for="__nav_4_2_1" id="__nav_4_2_1_label" tabindex="0">
-          CH01
+          Machine Learning Intro
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_1_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_4_2_1">
           <span class="md-nav__icon md-icon"></span>
-          CH01
+          Machine Learning Intro
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -539,120 +539,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          一、機器學習評估指標選定
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../01_evaluation_index/" class="md-nav__link">
         一、機器學習評估指標選定
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    [教學目標]
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    [範例重點]
-  </a>
-  
-    <nav class="md-nav" aria-label="[範例重點]">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#import" class="md-nav__link">
-    import 需要的套件
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    回歸問題
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    分類問題
-  </a>
-  
-    <nav class="md-nav" aria-label="分類問題">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#auc" class="md-nav__link">
-    AUC
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#f1-score" class="md-nav__link">
-    F1-Score
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    [本節重點]
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    練習
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -676,11 +567,73 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../03_lasso_ridge/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          三、Lasso、Ridge Regression 模型
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         三、Lasso、Ridge Regression 模型
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#import" class="md-nav__link">
+    import 需要的套件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lasso" class="md-nav__link">
+    LASSO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ridge" class="md-nav__link">
+    Ridge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    練習時間
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -751,14 +704,14 @@
       
       
         <label class="md-nav__link" for="__nav_4_2_2" id="__nav_4_2_2_label" tabindex="0">
-          CH02
+          Data Cleaning and Preprocessing
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4_2_2">
           <span class="md-nav__icon md-icon"></span>
-          CH02
+          Data Cleaning and Preprocessing
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -768,8 +721,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ch02/01_data_cleaning/" class="md-nav__link">
+      <a href="../../02_data_cleaning_preprocessing/01_statistical_indicators/" class="md-nav__link">
         Section 1 統計指標實作範例
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_data_cleaning_preprocessing/02_read_data/" class="md-nav__link">
+        Section 2 - 讀取資料
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_data_cleaning_preprocessing/03_dataframe/" class="md-nav__link">
+        Section 3 - 自己建立 datafreme
       </a>
     </li>
   
@@ -1413,76 +1394,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    [教學目標]
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    [範例重點]
-  </a>
-  
-    <nav class="md-nav" aria-label="[範例重點]">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#import" class="md-nav__link">
     import 需要的套件
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    回歸問題
+  <a href="#lasso" class="md-nav__link">
+    LASSO
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    分類問題
-  </a>
-  
-    <nav class="md-nav" aria-label="分類問題">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#auc" class="md-nav__link">
-    AUC
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#f1-score" class="md-nav__link">
-    F1-Score
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    [本節重點]
+  <a href="#ridge" class="md-nav__link">
+    Ridge
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    練習
+  <a href="#_1" class="md-nav__link">
+    練習時間
   </a>
   
 </li>
@@ -2536,31 +2470,18 @@ Licensed under the Apache License, Version 2.0.
     init_mathjax();
     </script>
     <!-- End of mathjax configuration --><div class="jupyter-wrapper">
-<div id="cell-id=1e662acd" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=477a3cdd" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="">&#19968;&#12289;&#27231;&#22120;&#23416;&#32722;&#35413;&#20272;&#25351;&#27161;&#36984;&#23450;<a class="anchor-link" href="#">&#182;</a></h1><h2 id="">[&#25945;&#23416;&#30446;&#27161;]<a class="anchor-link" href="#">&#182;</a></h2><p>學習 sklearn 中，各種評估指標的使用與意義</p>
-
+<h1 id="lassoridge-regression">&#19977;&#12289;Lasso&#12289;Ridge Regression &#27169;&#22411;<a class="anchor-link" href="#lassoridge-regression">&#182;</a></h1>
 </div>
 </div>
 </div>
 </div>
-<div id="cell-id=819450f0" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="">[&#31684;&#20363;&#37325;&#40670;]<a class="anchor-link" href="#">&#182;</a></h2><p>注意觀察各指標的數值範圍，以及輸入函數中的資料格式</p>
-
-</div>
-</div>
-</div>
-</div>
-<div id="cell-id=438418b3" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=3b70bd6c" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2571,7 +2492,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div id="cell-id=7c4285a8" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div id="cell-id=b195eefb" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2591,21 +2512,17 @@ Licensed under the Apache License, Version 2.0.
                     </div>
                 </clipboard-copy>
             </div>
-            <div class="highlight-ipynb hl-python "><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span><span class="p">,</span> <span class="n">datasets</span>
-<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-
+            <div class="highlight-ipynb hl-python "><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib.pylab</span> <span class="kn">import</span> <span class="n">rcParams</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span><span class="p">,</span> <span class="n">linear_model</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">r2_score</span>
 </pre></div>
-<div id="cell-1" class="clipboard-copy-txt">from sklearn import metrics, datasets
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-
+<div id="cell-1" class="clipboard-copy-txt">import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.pylab import rcParams
-import numpy as np</div>
+from sklearn import datasets, linear_model
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error, r2_score</div>
         
         </div>
     </div>
@@ -2614,37 +2531,8 @@ import numpy as np</div>
 </div>
 
 </div>
-</div>
-<div id="cell-id=fe638592" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="">&#22238;&#27512;&#21839;&#38988;<a class="anchor-link" href="#">&#182;</a></h2><p>常見的評估指標有</p>
-<ul>
-<li>MAE</li>
-<li>MSE</li>
-<li>R-square</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div id="cell-id=51ccfc92" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>我們隨機生成(X, y)資料，然後使用線性回歸模型做預測，再使用 MAE, MSE, R-square 評估</p>
-
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div id="cell-id=68ed17e1" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div id="cell-id=e1ee8836" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2664,27 +2552,35 @@ import numpy as np</div>
                     </div>
                 </clipboard-copy>
             </div>
-            <div class="highlight-ipynb hl-python "><pre><span></span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">make_regression</span><span class="p">(</span><span class="n">n_features</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">noise</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span> <span class="c1"># 生成資料</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span> <span class="c1"># 建立回歸模型</span>
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="c1"># 將資料放進模型訓練</span>
-<span class="n">prediction</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="c1"># 進行預測</span>
-<span class="n">mae</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">prediction</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="c1"># 使用 MAE 評估</span>
-<span class="n">mse</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">prediction</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="c1"># 使用 MSE 評估</span>
-<span class="n">r2</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">r2_score</span><span class="p">(</span><span class="n">prediction</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="c1"># 使用 r-square 評估</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MAE: &quot;</span><span class="p">,</span> <span class="n">mae</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MSE: &quot;</span><span class="p">,</span> <span class="n">mse</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;R-square: &quot;</span><span class="p">,</span> <span class="n">r2</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python "><pre><span></span><span class="c1"># 讀取糖尿病資料集</span>
+<span class="n">diabetes</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_diabetes</span><span class="p">()</span>
+
+<span class="c1"># 切分訓練集/測試集</span>
+<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">diabetes</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">diabetes</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="c1"># 建立一個線性回歸模型</span>
+<span class="n">regr</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">LinearRegression</span><span class="p">()</span>
+
+<span class="c1"># 將訓練資料丟進去模型訓練</span>
+<span class="n">regr</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># 將測試資料丟進模型得到預測結果</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">regr</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
 </pre></div>
-<div id="cell-2" class="clipboard-copy-txt">X, y = datasets.make_regression(n_features=1, random_state=42, noise=100) # 生成資料
-model = LinearRegression() # 建立回歸模型
-model.fit(X, y) # 將資料放進模型訓練
-prediction = model.predict(X) # 進行預測
-mae = metrics.mean_absolute_error(prediction, y) # 使用 MAE 評估
-mse = metrics.mean_squared_error(prediction, y) # 使用 MSE 評估
-r2 = metrics.r2_score(prediction, y) # 使用 r-square 評估
-print("MAE: ", mae)
-print("MSE: ", mse)
-print("R-square: ", r2)</div>
+<div id="cell-2" class="clipboard-copy-txt"># 讀取糖尿病資料集
+diabetes = datasets.load_diabetes()
+
+# 切分訓練集/測試集
+x_train, x_test, y_train, y_test = train_test_split(diabetes.data, diabetes.target, test_size=0.2, random_state=4)
+
+# 建立一個線性回歸模型
+regr = linear_model.LinearRegression()
+
+# 將訓練資料丟進去模型訓練
+regr.fit(x_train, y_train)
+
+# 將測試資料丟進模型得到預測結果
+y_pred = regr.predict(x_test)</div>
         
         </div>
     </div>
@@ -2694,7 +2590,7 @@ print("R-square: ", r2)</div>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div id="cell-id=0e42b145" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div id="cell-id=1622069a" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2714,11 +2610,9 @@ print("R-square: ", r2)</div>
                     </div>
                 </clipboard-copy>
             </div>
-            <div class="highlight-ipynb hl-python "><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+            <div class="highlight-ipynb hl-python "><pre><span></span><span class="n">x_train</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
-<div id="cell-3" class="clipboard-copy-txt">plt.scatter(X,y)
-plt.show()</div>
+<div id="cell-3" class="clipboard-copy-txt">x_train.shape</div>
         
         </div>
     </div>
@@ -2728,7 +2622,7 @@ plt.show()</div>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div id="cell-id=9d55c456" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div id="cell-id=4b39ca36" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2748,11 +2642,9 @@ plt.show()</div>
                     </div>
                 </clipboard-copy>
             </div>
-            <div class="highlight-ipynb hl-python "><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">prediction</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+            <div class="highlight-ipynb hl-python "><pre><span></span><span class="n">x_train</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
-<div id="cell-4" class="clipboard-copy-txt">plt.scatter(X, prediction)
-plt.show()</div>
+<div id="cell-4" class="clipboard-copy-txt">x_train[1]</div>
         
         </div>
     </div>
@@ -2762,23 +2654,19 @@ plt.show()</div>
 
 </div>
 </div>
-<div id="cell-id=6f3e974a" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=45386194" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="">&#20998;&#39006;&#21839;&#38988;<a class="anchor-link" href="#">&#182;</a></h2><p>常見的評估指標有</p>
-<ul>
-<li>AUC</li>
-<li>F1-Score (Precision, Recall)</li>
-</ul>
+<p>y = x1<em>w1 + x2</em>w2 + .... + x10*w10 + b</p>
 
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div id="cell-id=c0a7fc45" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div id="cell-id=2288456f" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2798,11 +2686,9 @@ plt.show()</div>
                     </div>
                 </clipboard-copy>
             </div>
-            <div class="highlight-ipynb hl-python "><pre><span></span><span class="n">cancer</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_breast_cancer</span><span class="p">()</span> <span class="c1"># 我們使用 sklearn 內含的乳癌資料集</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">cancer</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">cancer</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python "><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">regr</span><span class="o">.</span><span class="n">coef_</span><span class="p">)</span>
 </pre></div>
-<div id="cell-5" class="clipboard-copy-txt">cancer = datasets.load_breast_cancer() # 我們使用 sklearn 內含的乳癌資料集
-X_train, X_test, y_train, y_test = train_test_split(cancer.data, cancer.target, test_size=50, random_state=0)</div>
+<div id="cell-5" class="clipboard-copy-txt">print(regr.coef_)</div>
         
         </div>
     </div>
@@ -2812,7 +2698,7 @@ X_train, X_test, y_train, y_test = train_test_split(cancer.data, cancer.target, 
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div id="cell-id=e1814a5e" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div id="cell-id=eb648b10" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2832,9 +2718,13 @@ X_train, X_test, y_train, y_test = train_test_split(cancer.data, cancer.target, 
                     </div>
                 </clipboard-copy>
             </div>
-            <div class="highlight-ipynb hl-python "><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span> <span class="c1"># 測試集中的 label</span>
+            <div class="highlight-ipynb hl-python "><pre><span></span><span class="c1"># 預測值與實際值的差距，使用 MSE</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean squared error: </span><span class="si">%.2f</span><span class="s2">&quot;</span>
+      <span class="o">%</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
 </pre></div>
-<div id="cell-6" class="clipboard-copy-txt">print(y_test) # 測試集中的 label</div>
+<div id="cell-6" class="clipboard-copy-txt"># 預測值與實際值的差距，使用 MSE
+print("Mean squared error: %.2f"
+      % mean_squared_error(y_test, y_pred))</div>
         
         </div>
     </div>
@@ -2843,8 +2733,19 @@ X_train, X_test, y_train, y_test = train_test_split(cancer.data, cancer.target, 
 </div>
 
 </div>
+</div>
+<div id="cell-id=c7f3f4c6" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="lasso">LASSO<a class="anchor-link" href="#lasso">&#182;</a></h3>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div id="cell-id=ec3e498c" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div id="cell-id=d604d491" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2864,9 +2765,35 @@ X_train, X_test, y_train, y_test = train_test_split(cancer.data, cancer.target, 
                     </div>
                 </clipboard-copy>
             </div>
-            <div class="highlight-ipynb hl-python "><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python "><pre><span></span><span class="c1"># 讀取糖尿病資料集</span>
+<span class="n">diabetes</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_diabetes</span><span class="p">()</span>
+
+<span class="c1"># 切分訓練集/測試集</span>
+<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">diabetes</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">diabetes</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="c1"># 建立一個線性回歸模型</span>
+<span class="n">lasso</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">Lasso</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+
+<span class="c1"># 將訓練資料丟進去模型訓練</span>
+<span class="n">lasso</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># 將測試資料丟進模型得到預測結果</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">lasso</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
 </pre></div>
-<div id="cell-7" class="clipboard-copy-txt">print(X_train)</div>
+<div id="cell-7" class="clipboard-copy-txt"># 讀取糖尿病資料集
+diabetes = datasets.load_diabetes()
+
+# 切分訓練集/測試集
+x_train, x_test, y_train, y_test = train_test_split(diabetes.data, diabetes.target, test_size=0.2, random_state=4)
+
+# 建立一個線性回歸模型
+lasso = linear_model.Lasso(alpha=1.0)
+
+# 將訓練資料丟進去模型訓練
+lasso.fit(x_train, y_train)
+
+# 將測試資料丟進模型得到預測結果
+y_pred = lasso.predict(x_test)</div>
         
         </div>
     </div>
@@ -2876,7 +2803,7 @@ X_train, X_test, y_train, y_test = train_test_split(cancer.data, cancer.target, 
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div id="cell-id=8537acad" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div id="cell-id=0f8d5259" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2896,9 +2823,11 @@ X_train, X_test, y_train, y_test = train_test_split(cancer.data, cancer.target, 
                     </div>
                 </clipboard-copy>
             </div>
-            <div class="highlight-ipynb hl-python "><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">50</span><span class="p">,))</span> <span class="c1"># 我們先隨機生成 50 筆預測值，範圍都在 0~1 之間，代表機率值</span>
+            <div class="highlight-ipynb hl-python "><pre><span></span><span class="c1"># 印出各特徵對應的係數，可以看到許多係數都變成 0，Lasso Regression 的確可以做特徵選取</span>
+<span class="n">lasso</span><span class="o">.</span><span class="n">coef_</span>
 </pre></div>
-<div id="cell-8" class="clipboard-copy-txt">y_pred = np.random.random((50,)) # 我們先隨機生成 50 筆預測值，範圍都在 0~1 之間，代表機率值</div>
+<div id="cell-8" class="clipboard-copy-txt"># 印出各特徵對應的係數，可以看到許多係數都變成 0，Lasso Regression 的確可以做特徵選取
+lasso.coef_</div>
         
         </div>
     </div>
@@ -2908,7 +2837,7 @@ X_train, X_test, y_train, y_test = train_test_split(cancer.data, cancer.target, 
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div id="cell-id=ab3e5dee" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div id="cell-id=60b8bf33" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2928,9 +2857,9 @@ X_train, X_test, y_train, y_test = train_test_split(cancer.data, cancer.target, 
                     </div>
                 </clipboard-copy>
             </div>
-            <div class="highlight-ipynb hl-python "><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">y_pred</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python "><pre><span></span>
 </pre></div>
-<div id="cell-9" class="clipboard-copy-txt">print(y_pred)</div>
+<div id="cell-9" class="clipboard-copy-txt"></div>
         
         </div>
     </div>
@@ -2939,19 +2868,8 @@ X_train, X_test, y_train, y_test = train_test_split(cancer.data, cancer.target, 
 </div>
 
 </div>
-</div>
-<div id="cell-id=6c356ef1" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="auc">AUC<a class="anchor-link" href="#auc">&#182;</a></h3>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div id="cell-id=45928b3b" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div id="cell-id=e8fb2e14" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2971,11 +2889,13 @@ X_train, X_test, y_train, y_test = train_test_split(cancer.data, cancer.target, 
                     </div>
                 </clipboard-copy>
             </div>
-            <div class="highlight-ipynb hl-python "><pre><span></span><span class="n">auc</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span> <span class="c1"># 使用 roc_auc_score 來評估。 **這邊特別注意 y_pred 必須要放機率值進去!**</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;AUC: &quot;</span><span class="p">,</span> <span class="n">auc</span><span class="p">)</span> <span class="c1"># 得到結果約 0.5，與亂猜的結果相近，因為我們的預測值是用隨機生成的</span>
+            <div class="highlight-ipynb hl-python "><pre><span></span><span class="c1"># 預測值與實際值的差距，使用 MSE</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean squared error: </span><span class="si">%.2f</span><span class="s2">&quot;</span>
+      <span class="o">%</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
 </pre></div>
-<div id="cell-10" class="clipboard-copy-txt">auc = metrics.roc_auc_score(y_test, y_pred) # 使用 roc_auc_score 來評估。 **這邊特別注意 y_pred 必須要放機率值進去!**
-print("AUC: ", auc) # 得到結果約 0.5，與亂猜的結果相近，因為我們的預測值是用隨機生成的</div>
+<div id="cell-10" class="clipboard-copy-txt"># 預測值與實際值的差距，使用 MSE
+print("Mean squared error: %.2f"
+      % mean_squared_error(y_test, y_pred))</div>
         
         </div>
     </div>
@@ -2985,18 +2905,18 @@ print("AUC: ", auc) # 得到結果約 0.5，與亂猜的結果相近，因為我
 
 </div>
 </div>
-<div id="cell-id=262ddfe4" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=3b69f7a0" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="f1-score">F1-Score<a class="anchor-link" href="#f1-score">&#182;</a></h3>
+<h3 id="ridge">Ridge<a class="anchor-link" href="#ridge">&#182;</a></h3>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div id="cell-id=a4791ee8" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div id="cell-id=e9c9ce74" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -3016,23 +2936,105 @@ print("AUC: ", auc) # 得到結果約 0.5，與亂猜的結果相近，因為我
                     </div>
                 </clipboard-copy>
             </div>
-            <div class="highlight-ipynb hl-python "><pre><span></span><span class="n">threshold</span> <span class="o">=</span> <span class="mf">0.5</span> 
-<span class="n">y_pred_binarized</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">y_pred</span><span class="o">&gt;</span><span class="n">threshold</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># 使用 np.where 函數, 將 y_pred &gt; 0.5 的值變為 1，小於 0.5 的為 0</span>
-<span class="n">f1</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_binarized</span><span class="p">)</span> <span class="c1"># 使用 F1-Score 評估</span>
-<span class="n">precision</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_binarized</span><span class="p">)</span> <span class="c1"># 使用 Precision 評估</span>
-<span class="n">recall</span>  <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_binarized</span><span class="p">)</span> <span class="c1"># 使用 recall 評估</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;F1-Score: &quot;</span><span class="p">,</span> <span class="n">f1</span><span class="p">)</span> 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Precision: &quot;</span><span class="p">,</span> <span class="n">precision</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Recall: &quot;</span><span class="p">,</span> <span class="n">recall</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python "><pre><span></span><span class="c1"># 讀取糖尿病資料集</span>
+<span class="n">diabetes</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_diabetes</span><span class="p">()</span>
+
+<span class="c1"># 切分訓練集/測試集</span>
+<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">diabetes</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">diabetes</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="c1"># 建立一個線性回歸模型</span>
+<span class="n">ridge</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># 將訓練資料丟進去模型訓練</span>
+<span class="n">ridge</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># 將測試資料丟進模型得到預測結果</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">regr</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
 </pre></div>
-<div id="cell-11" class="clipboard-copy-txt">threshold = 0.5 
-y_pred_binarized = np.where(y_pred>threshold, 1, 0) # 使用 np.where 函數, 將 y_pred > 0.5 的值變為 1，小於 0.5 的為 0
-f1 = metrics.f1_score(y_test, y_pred_binarized) # 使用 F1-Score 評估
-precision = metrics.precision_score(y_test, y_pred_binarized) # 使用 Precision 評估
-recall  = metrics.recall_score(y_test, y_pred_binarized) # 使用 recall 評估
-print("F1-Score: ", f1) 
-print("Precision: ", precision)
-print("Recall: ", recall)</div>
+<div id="cell-11" class="clipboard-copy-txt"># 讀取糖尿病資料集
+diabetes = datasets.load_diabetes()
+
+# 切分訓練集/測試集
+x_train, x_test, y_train, y_test = train_test_split(diabetes.data, diabetes.target, test_size=0.2, random_state=4)
+
+# 建立一個線性回歸模型
+ridge = linear_model.Ridge(alpha=10)
+
+# 將訓練資料丟進去模型訓練
+ridge.fit(x_train, y_train)
+
+# 將測試資料丟進模型得到預測結果
+y_pred = regr.predict(x_test)</div>
+        
+        </div>
+    </div>
+
+</div>
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div id="cell-id=6c39b7e6" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+            <div class="zeroclipboard-container">
+                <clipboard-copy for="cell-12">
+                <div>
+                    <span class="notice" hidden>Copied!</span>
+                    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                        <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                        <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                    </svg>
+                    </div>
+                </clipboard-copy>
+            </div>
+            <div class="highlight-ipynb hl-python "><pre><span></span><span class="c1"># 印出 Ridge 的參數，可以很明顯看到比起 Linear Regression，參數的數值都明顯小了許多</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ridge</span><span class="o">.</span><span class="n">coef_</span><span class="p">)</span>
+</pre></div>
+<div id="cell-12" class="clipboard-copy-txt"># 印出 Ridge 的參數，可以很明顯看到比起 Linear Regression，參數的數值都明顯小了許多
+print(ridge.coef_)</div>
+        
+        </div>
+    </div>
+
+</div>
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div id="cell-id=180088bb" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+            <div class="zeroclipboard-container">
+                <clipboard-copy for="cell-13">
+                <div>
+                    <span class="notice" hidden>Copied!</span>
+                    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                        <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                        <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                    </svg>
+                    </div>
+                </clipboard-copy>
+            </div>
+            <div class="highlight-ipynb hl-python "><pre><span></span><span class="c1"># 預測值與實際值的差距，使用 MSE</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean squared error: </span><span class="si">%.2f</span><span class="s2">&quot;</span>
+      <span class="o">%</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+</pre></div>
+<div id="cell-13" class="clipboard-copy-txt"># 預測值與實際值的差距，使用 MSE
+print("Mean squared error: %.2f"
+      % mean_squared_error(y_test, y_pred))</div>
         
         </div>
     </div>
@@ -3042,25 +3044,26 @@ print("Recall: ", recall)</div>
 
 </div>
 </div>
-<div id="cell-id=0de8ba3a" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=626f0e91" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="">[&#26412;&#31680;&#37325;&#40670;]<a class="anchor-link" href="#">&#182;</a></h2><p>了解 F1-score 的公式意義，並試著理解程式碼</p>
+<p>可以看見 LASSO 與 Ridge 的結果並沒有比原本的線性回歸來得好，
+這是因為目標函數被加上了正規化函數，讓模型不能過於複雜，相當於限制模型擬和資料的能力。因此若沒有發現 Over-fitting 的情況，是可以不需要一開始就加上太強的正規化的。</p>
 
 </div>
 </div>
 </div>
 </div>
-<div id="cell-id=4fba829a" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=4fe564bd" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="">&#32244;&#32722;<a class="anchor-link" href="#">&#182;</a></h2><p>請參考 F1-score 的公式與<a href="https://github.com/scikit-learn/scikit-learn/blob/bac89c2/sklearn/metrics/classification.py#L620">原始碼</a>，試著寫出 F2-Score 的計算函數</p>
+<h2 id="">&#32244;&#32722;&#26178;&#38291;<a class="anchor-link" href="#">&#182;</a></h2><p>請使用其他資料集 (boston, wine)，並調整不同的 alpha 來觀察模型訓練的情形。</p>
 
 </div>
 </div>
@@ -3075,7 +3078,7 @@ print("Recall: ", recall)</div>
   <small>
     
       Last update:
-      2023-06-11
+      2023-06-16
     
   </small>
 </div>
@@ -3154,7 +3157,7 @@ print("Recall: ", recall)</div>
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.top", "navigation.tabs"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.b4d07000.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a51614de.min.js"></script>
       
     
   </body>
